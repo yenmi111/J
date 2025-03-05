@@ -1,16 +1,16 @@
-//1 //nodemon 自動更新結果
-
-//npm install nodemon -g --save    下載插件 global
-//nodemon 執行
-
-//npm install dayjs  (npm i dayjs)       只適用這個專案
+//1 
 
 //package.json  第三方插件清單
-//npm init
-// -----------------------------------------
+//npm init  創立package
 
+//npm install nodemon -g --save    下載插件 global
+//nodemon (檔案名)自動更新結果
+
+//npm install dayjs  (npm i dayjs)       只適用這個專案
+// -----------------------------------------
 const http=require('http')
 const fs=require('fs')
+
 const dayjs = require('dayjs')
 
 /* console.log(dayjs().year())
