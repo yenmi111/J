@@ -1,0 +1,15 @@
+<%- include('header.ejs') %>
+    <h1>首頁</h1>
+    <!-- %=直接顯示值 -->
+    <h2><%=time%></h2>  
+
+    <% if(blogs.length) { %>
+
+        <!-- forEach取出每個值,印出 -->
+        <% blogs.forEach(article => { %>
+            <h3>標題 :<%=article.title%></h3>
+            <p>作者 :<%=article.author%></p>
+            <!-- <p>一二三</p> -->
+        <% }) %>
+    <% } %>  
+<%- include('footer.ejs') %>
